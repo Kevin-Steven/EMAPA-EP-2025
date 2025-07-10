@@ -1,6 +1,9 @@
 <?php
+require_once __DIR__ . '/../config/config.php';
+
 function renderSidebarEmapa()
 {
+    global $base_url;
 ?>
     <!-- Navbar Moderno -->
     <nav class="navbar emapa-navbar shadow-sm py-2">
@@ -12,7 +15,7 @@ function renderSidebarEmapa()
 
             <!-- Logo y Marca -->
             <div class="d-flex align-items-center gap-3">
-                <img src="../../image/logo-emapa.png" alt="Logo EMAPA-EP" height="50">
+                <img src="<?= $base_url ?>/image/logo-emapa.png" alt="Logo EMAPA-EP" height="50">
             </div>
         </div>
     </nav>
@@ -20,7 +23,7 @@ function renderSidebarEmapa()
     <!-- Sidebar Offcanvas -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
         <div class="offcanvas-header" style="background: var(--color-principal);">
-            <img src="../../image/logo-emapa.png" alt="Logo EMAPA-EP" height="50">
+             <img src="<?= $base_url ?>/image/logo-emapa.png" alt="Logo EMAPA-EP" height="50">
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
         </div>
 
@@ -43,17 +46,17 @@ function renderSidebarEmapa()
                         <div class="accordion-body px-0 pt-2">
                             <ul class="nav flex-column ps-3 gap-2">
                                 <li>
-                                    <a class="nav-link d-flex align-items-center gap-2" href="/app/formularios/cierre-provisional.php">
+                                    <a class="nav-link d-flex align-items-center gap-2" href="<?php echo $base_url; ?>/app/formularios/cierre-provisional.php">
                                         <i class='bx bx-right-arrow-alt'></i> Cierre Provisional
                                     </a>
                                 </li>
-                                 <li>
-                                    <a class="nav-link d-flex align-items-center gap-2" href="/app/formularios/cierre-definitivo.php">
+                                <li>
+                                    <a class="nav-link d-flex align-items-center gap-2" href="<?php echo $base_url; ?>/app/formularios/cierre-definitivo.php">
                                         <i class='bx bx-right-arrow-alt'></i> Cierre Definitivo
                                     </a>
                                 </li>
                                 <li>
-                                    <a class="nav-link d-flex align-items-center gap-2" href="/app/formularios/certificado-no-ser-usuario.php">
+                                    <a class="nav-link d-flex align-items-center gap-2" href="<?php echo $base_url; ?>/app/formularios/certificado-no-ser-usuario.php">
                                         <i class='bx bx-right-arrow-alt'></i> Certificado De No Ser Usuario
                                     </a>
                                 </li>
@@ -62,7 +65,7 @@ function renderSidebarEmapa()
                                         <i class='bx bx-right-arrow-alt'></i> Acceso a la Información Pública
                                     </a>
                                 </li>
-                                 <li>
+                                <li>
                                     <a class="nav-link d-flex align-items-center gap-2" href="#">
                                         <i class='bx bx-right-arrow-alt'></i> Servicio de Agua Potable
                                     </a>

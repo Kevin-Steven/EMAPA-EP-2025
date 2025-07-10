@@ -1,4 +1,5 @@
 <?php
+require_once 'app/config/config.php';
 include 'app/components/sidebar-emapa.php';
 include 'app/components/footer-emapa.php';
 ?>
@@ -36,7 +37,7 @@ include 'app/components/footer-emapa.php';
                         </div>
                         <h5 class="fw-bold text-uppercase mb-2 text-emapa">Solicitud de Cierre <br>Provisional</h5>
                         <p class="text-muted small mb-4">Suspende temporalmente el servicio de agua por causas personales o técnicas justificadas.</p>
-                        <a href="app/formularios/cierre-provisional.php" class="btn btn-emapa-outline w-100">
+                        <a href="<?php echo $base_url; ?>/app/formularios/cierre-provisional.php" class="btn btn-emapa-outline w-100">
                             <i class='bx bx-pencil'></i> Llenar Formulario
                         </a>
                     </div>
@@ -51,12 +52,12 @@ include 'app/components/footer-emapa.php';
                         </div>
                         <h5 class="fw-bold text-uppercase mb-2 text-emapa">Solicitud de Cierre <br>Definitivo</h5>
                         <p class="text-muted small mb-4">Realiza el cierre total de tu cuenta de agua potable de manera formal y documentada.</p>
-                        <a href="app/formularios/cierre-definitivo.php" class="btn btn-emapa-outline w-100">
+                         <a href="<?php echo $base_url; ?>/app/formularios/cierre-definitivo.php" class="btn btn-emapa-outline w-100">
                             <i class='bx bx-pencil'></i> Llenar Formulario
                         </a>
                     </div>
                 </div>
-                
+
                 <!-- Card: Certificado de No Adeudar -->
                 <div class="col-md-6 col-lg-4">
                     <div class="card h-100 border-0 rounded-4 hover-shadow transition text-center px-3 py-4 position-relative">
@@ -66,7 +67,7 @@ include 'app/components/footer-emapa.php';
                         </div>
                         <h5 class="fw-bold text-uppercase mb-2 text-emapa">Solicitud de Certificado de no Ser Usuario</h5>
                         <p class="text-muted small mb-4">Solicita constancia que confirme que no eres usuario registrado en nuestra base de datos.</p>
-                        <a href="app/users/pages/certificado-no-adeudar.php" class="btn btn-emapa-outline w-100">
+                        <a href="<?php echo $base_url; ?>/app/formularios/certificado-no-ser-usuario.php" class="btn btn-emapa-outline w-100">
                             <i class='bx bx-pencil'></i> Llenar Formulario
                         </a>
                     </div>
@@ -81,7 +82,7 @@ include 'app/components/footer-emapa.php';
                         </div>
                         <h5 class="fw-bold text-uppercase mb-2 text-emapa">Solicitud de Servicio de Agua Potable</h5>
                         <p class="text-muted small mb-4">Inicia el trámite para contar con el servicio de agua potable en tu propiedad de forma rápida y segura.</p>
-                        <a href="app/users/pages/servicio-agua.php" class="btn btn-emapa-outline w-100">
+                        <a href="#" class="btn btn-emapa-outline w-100">
                             <i class='bx bx-pencil'></i> Llenar Formulario
                         </a>
                     </div>
@@ -96,7 +97,7 @@ include 'app/components/footer-emapa.php';
                         </div>
                         <h5 class="fw-bold text-uppercase mb-2 text-emapa">Solicitud de Acceso a la Información Pública</h5>
                         <p class="text-muted small mb-4">Solicita datos institucionales en cumplimiento con la Ley de Acceso a la Información.</p>
-                        <a href="app/users/pages/informacion-publica.php" class="btn btn-emapa-outline w-100">
+                        <a href="#" class="btn btn-emapa-outline w-100">
                             <i class='bx bx-pencil'></i> Llenar Formulario
                         </a>
                     </div>
@@ -112,7 +113,7 @@ include 'app/components/footer-emapa.php';
                         </div>
                         <h5 class="fw-bold text-uppercase mb-2 text-emapa">Solicitud de Cambio de Razón Social</h5>
                         <p class="text-muted small mb-4">Actualiza los datos legales del titular del servicio con este formulario de modificación.</p>
-                        <a href="app/users/pages/cambio-razon-social.php" class="btn btn-emapa-outline w-100">
+                        <a href="#" class="btn btn-emapa-outline w-100">
                             <i class='bx bx-pencil'></i> Llenar Formulario
                         </a>
                     </div>
@@ -127,7 +128,7 @@ include 'app/components/footer-emapa.php';
                         </div>
                         <h5 class="fw-bold text-uppercase mb-2 text-emapa">Certificado de No <br>Adeudar</h5>
                         <p class="text-muted small mb-4">Obtén un documento oficial que certifica que no mantienes deudas con EMAPA EP Daule.</p>
-                        <a href="app/users/pages/certificado-no-adeudar.php" class="btn btn-emapa-outline w-100">
+                        <a href="#" class="btn btn-emapa-outline w-100">
                             <i class='bx bx-pencil'></i> Llenar Formulario
                         </a>
                     </div>
