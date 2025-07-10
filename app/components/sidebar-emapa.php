@@ -26,7 +26,7 @@ function renderSidebarEmapa()
 
         <div class="offcanvas-body sidebar-nav-modern d-flex flex-column gap-3 px-3">
             <!-- Inicio -->
-            <a class="nav-link d-flex align-items-center gap-2" href="#">
+            <a class="nav-link d-flex align-items-center gap-2" href="/">
                 <i class='bx bx-home-alt'></i> Inicio
             </a>
 
@@ -43,13 +43,38 @@ function renderSidebarEmapa()
                         <div class="accordion-body px-0 pt-2">
                             <ul class="nav flex-column ps-3 gap-2">
                                 <li>
-                                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                                    <a class="nav-link d-flex align-items-center gap-2" href="/app/formularios/cierre-provisional.php">
                                         <i class='bx bx-right-arrow-alt'></i> Cierre Provisional
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a class="nav-link d-flex align-items-center gap-2" href="/app/formularios/cierre-definitivo.php">
+                                        <i class='bx bx-right-arrow-alt'></i> Cierre Definitivo
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link d-flex align-items-center gap-2" href="/app/formularios/certificado-no-ser-usuario.php">
+                                        <i class='bx bx-right-arrow-alt'></i> Certificado De No Ser Usuario
                                     </a>
                                 </li>
                                 <li>
                                     <a class="nav-link d-flex align-items-center gap-2" href="#">
                                         <i class='bx bx-right-arrow-alt'></i> Acceso a la Información Pública
+                                    </a>
+                                </li>
+                                 <li>
+                                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                                        <i class='bx bx-right-arrow-alt'></i> Servicio de Agua Potable
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                                        <i class='bx bx-right-arrow-alt'></i> Cambio de Razón Social
+                                    </a>
+                                </li>
+                                <li>
+                                    <a class="nav-link d-flex align-items-center gap-2" href="#">
+                                        <i class='bx bx-right-arrow-alt'></i> Certificado De No Adeudar
                                     </a>
                                 </li>
                             </ul>

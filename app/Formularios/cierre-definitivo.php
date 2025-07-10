@@ -13,7 +13,7 @@ include '../components/footer-emapa.php';
     <title>SOLICITUD DE CIERRE DEFINITIVO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
-    <link rel="icon" href="../../../images/favicon.png" type="image/png">
+    <link rel="icon" href="../../image/favicon.ico" type="image/ico">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 
@@ -21,18 +21,17 @@ include '../components/footer-emapa.php';
 
     <?php renderSidebarEmapa(); ?>
 
-
     <div class="content mt-3">
         <div class="container mb-4">
 
             <nav aria-label="breadcrumb" class="bg-white py-2 ">
                 <ol class="breadcrumb mb-0">
                     <li class="breadcrumb-item">
-                        <a href="../../index.php" class="text-decoration-none text-emapa fw-medium">
+                        <a href="../../index.php" class="text-decoration-none text-dark">
                             <i class='bx bx-home-alt me-1'></i> Formularios
                         </a>
                     </li>
-                    <li class="breadcrumb-item active text-dark fw-semibold" aria-current="page">
+                    <li class="breadcrumb-item active text-emapa fw-medium" aria-current="page">
                         Solicitud de Cierre Definitivo
                     </li>
                 </ol>
@@ -74,7 +73,7 @@ include '../components/footer-emapa.php';
                         </div>
                         <div class="col-md-6">
                             <label class="form-label fw-semibold">N° de Cédula</label>
-                            <input type="text" name="cedula" class="form-control" required>
+                            <input type="text" name="cedula" data-tipo="cedula" class="form-control" oninput="validarCampoNumerico(this)" required>
                         </div>
                         <div class="col-md-6">
                             <label class="form-label fw-semibold">N° de Cuenta de la Factura o Notificación de Pago</label>
@@ -86,7 +85,7 @@ include '../components/footer-emapa.php';
                         </div>
                         <div class="col-md-12">
                             <label class="form-label fw-semibold">Teléfono Fijo o Celular</label>
-                            <input type="text" name="telefono" class="form-control" required>
+                            <input type="text" name="telefono" class="form-control" data-tipo="telefono" oninput="validarCampoNumerico(this)" required>
                         </div>
                         <div class="col-md-12">
                             <label class="form-label fw-semibold">Especifique el Motivo del Cierre Definitivo</label>
@@ -143,8 +142,8 @@ include '../components/footer-emapa.php';
                 </div>
 
 
-                <div class="text-end">
-                    <button type="submit" class="btn btn-danger">
+                <div class="text-end my-5">
+                    <button type="button" class="btn btn-danger" id="btn-generar-pdf">
                         <i class='bx bxs-file-pdf'></i> Generar PDF
                     </button>
                 </div>
@@ -156,9 +155,10 @@ include '../components/footer-emapa.php';
     <?php renderFooterEmapa(); ?>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../../../js/number.js"></script>
-    <script src="../../../js/generar-pdf.js"></script>
-    <script src="../../../js/formulario-localstorage-basico.js"></script>
+    <script src="../js/number.js"></script>
+    <script src="../js/generar-pdf.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/formulario-localstorage-basico.js"></script>
 
 </body>
 

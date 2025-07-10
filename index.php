@@ -10,7 +10,7 @@ include 'app/components/footer-emapa.php';
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Formularios | EMAPA-EP</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="icon" href="app/images/favicon.png" type="image/png">
+    <link rel="icon" href="../image/favicon.ico" type="image/ico">
     <link href="app/css/styles.css" rel="stylesheet">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
@@ -52,6 +52,21 @@ include 'app/components/footer-emapa.php';
                         <h5 class="fw-bold text-uppercase mb-2 text-emapa">Solicitud de Cierre <br>Definitivo</h5>
                         <p class="text-muted small mb-4">Realiza el cierre total de tu cuenta de agua potable de manera formal y documentada.</p>
                         <a href="app/formularios/cierre-definitivo.php" class="btn btn-emapa-outline w-100">
+                            <i class='bx bx-pencil'></i> Llenar Formulario
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Card: Certificado de No Adeudar -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 rounded-4 hover-shadow transition text-center px-3 py-4 position-relative">
+                        <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3 px-3 py-1 rounded-1 fw-semibold">Nuevo</span>
+                        <div class="mb-3">
+                            <i class='bx bx-envelope fs-1 icon-emapa'></i>
+                        </div>
+                        <h5 class="fw-bold text-uppercase mb-2 text-emapa">Solicitud de Certificado de no Ser Usuario</h5>
+                        <p class="text-muted small mb-4">Solicita constancia que confirme que no eres usuario registrado en nuestra base de datos.</p>
+                        <a href="app/users/pages/certificado-no-adeudar.php" class="btn btn-emapa-outline w-100">
                             <i class='bx bx-pencil'></i> Llenar Formulario
                         </a>
                     </div>
@@ -118,20 +133,6 @@ include 'app/components/footer-emapa.php';
                     </div>
                 </div>
 
-                <!-- Card: Certificado de No Adeudar -->
-                <div class="col-md-6 col-lg-4">
-                    <div class="card h-100 border-0 rounded-4 hover-shadow transition text-center px-3 py-4 position-relative">
-                        <span class="badge bg-warning text-dark position-absolute top-0 start-0 m-3 px-3 py-1 rounded-1 fw-semibold">Nuevo</span>
-                        <div class="mb-3">
-                            <i class='bx bx-envelope fs-1 icon-emapa'></i>
-                        </div>
-                        <h5 class="fw-bold text-uppercase mb-2 text-emapa">Solicitud de Certificado de no Ser Usuario</h5>
-                        <p class="text-muted small mb-4">Solicita constancia que confirme que no eres usuario registrado en nuestra base de datos.</p>
-                        <a href="app/users/pages/certificado-no-adeudar.php" class="btn btn-emapa-outline w-100">
-                            <i class='bx bx-pencil'></i> Llenar Formulario
-                        </a>
-                    </div>
-                </div>
 
             </div>
 

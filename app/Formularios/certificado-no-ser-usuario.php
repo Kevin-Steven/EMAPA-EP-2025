@@ -10,7 +10,7 @@ include '../components/footer-emapa.php';
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>SOLICITUD DE CIERRE PROVISIONAL</title>
+    <title>SOLICITUD DE CERTIFICADO DE NO SER USUARIO</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="../css/styles.css" rel="stylesheet">
     <link rel="icon" href="../../image/favicon.ico" type="image/ico">
@@ -33,14 +33,14 @@ include '../components/footer-emapa.php';
                         </a>
                     </li>
                     <li class="breadcrumb-item active text-emapa fw-semibold" aria-current="page">
-                        Solicitud de Cierre Provisional
+                        Solicitud de Certificado de No Ser Usuario
                     </li>
                 </ol>
             </nav>
 
 
-            <h1 class="mb-4 mt-5 text-center fw-bold bienvenida">SOLICITUD DE CIERRE PROVISIONAL</h1>
-            <form id="formulario-pdf" action="../pdfs/global/pdf-cierre-provisional.php" method="POST" target="_blank">
+            <h1 class="mb-4 mt-5 text-center fw-bold bienvenida">SOLICITUD DE CERTIFICADO DE NO SER USUARIO</h1>
+            <form id="formulario-pdf" action="../pdfs/global/pdf-no-ser-usuario.php" method="POST" target="_blank">
                 <!-- Fecha y Ciudad -->
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header fw-bold">Datos del Formulario</div>
@@ -62,7 +62,7 @@ include '../components/footer-emapa.php';
 
                 <!-- Identificación del Cliente -->
                 <div class="card mb-4 shadow-sm">
-                    <div class="card-header fw-bold">Identificación del Cliente</div>
+                    <div class="card-header fw-bold">Identificación del Requiriente</div>
                     <div class="card-body row g-3">
                         <div class="col-md-6">
                             <label class="form-label fw-semibold">Nombres</label>
@@ -77,20 +77,16 @@ include '../components/footer-emapa.php';
                             <input type="text" name="cedula" data-tipo="cedula" class="form-control" oninput="validarCampoNumerico(this)" required>
                         </div>
                         <div class="col-md-6">
-                            <label class="form-label fw-semibold">N° de Cuenta de la Factura o Notificación de Pago</label>
-                            <input type="text" name="numero_cuenta" class="form-control" required>
+                            <label class="form-label fw-semibold">Teléfono Fijo o Celular</label>
+                            <input type="text" name="telefono" class="form-control" data-tipo="telefono" oninput="validarCampoNumerico(this)" required>
                         </div>
                         <div class="col-md-12">
                             <label class="form-label fw-semibold">Dirección Domiciliaria</label>
                             <input type="text" name="direccion" class="form-control" required>
                         </div>
                         <div class="col-md-12">
-                            <label class="form-label fw-semibold">Teléfono Fijo o Celular</label>
-                            <input type="text" name="telefono" class="form-control" data-tipo="telefono" oninput="validarCampoNumerico(this)" required>
-                        </div>
-                        <div class="col-md-12">
-                            <label class="form-label fw-semibold">Especifique el Motivo del Cierre Provisional</label>
-                            <textarea name="motivo_cierre" class="form-control" rows="3" required></textarea>
+                            <label class="form-label fw-semibold">Especifique El Motivo Por El Cual Está Solicitando El Certificado De No Ser Usuario Ni Adeudar A La Institución</label>
+                            <textarea name="motivo_solicitud" class="form-control" rows="3" required></textarea>
                         </div>
                     </div>
                 </div>
@@ -99,7 +95,7 @@ include '../components/footer-emapa.php';
                     <!-- Forma de Recepción de Respuesta -->
                     <div class="col-md-6">
                         <div class="card mb-4 shadow-sm h-100">
-                            <div class="card-header fw-bold">Forma de Recepción de la Respuesta</div>
+                            <div class="card-header fw-bold">Forma de Recepción de la Respuesta De La Solicitud</div>
                             <div class="card-body row g-3">
                                 <div class="col-12">
                                     <label class="form-label fw-semibold">Email</label>
@@ -118,19 +114,15 @@ include '../components/footer-emapa.php';
                     <!-- Motivos del Cierre Provisional -->
                     <div class="col-md-6">
                         <div class="card mb-4 shadow-sm h-100">
-                            <div class="card-header fw-bold">Motivos del Cierre Provisional</div>
+                            <div class="card-header fw-bold">Motivos del Certificado De No Ser Usuario</div>
                             <div class="card-body">
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="deuda_inquilinos" value="Deuda de Inquilinos">
-                                    <label class="form-check-label">Deuda de Inquilinos</label>
+                                    <input class="form-check-input" type="checkbox" name="inscripcion_escrituras" value="Inscripción de Escrituras">
+                                    <label class="form-check-label">Inscripción de Escrituras</label>
                                 </div>
                                 <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="casa_deshabitada" value="Casa Deshabitada">
-                                    <label class="form-check-label">Casa Deshabitada</label>
-                                </div>
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" name="terreno_vacio" value="Terreno Vacío">
-                                    <label class="form-check-label">Terreno Vacío</label>
+                                    <input class="form-check-input" type="checkbox" name="tramites_procesos_judiciales" value="Trámites por Procesos Judiciales">
+                                    <label class="form-check-label">Trámites por Procesos Judiciales</label>
                                 </div>
                                 <div class="form-check">
                                     <input class="form-check-input" type="checkbox" name="otros" value="Otros">
