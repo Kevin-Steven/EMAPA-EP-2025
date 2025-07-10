@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-principal: #00519E;
+    --color-secundario: #00284E;
+    --color-texto: #FFFFFF;
+    --color-texto-amarillo: #FFC636;
+    --color-texto-amarillo-hover: #E6B200;
+    --color-encabezados: #110B11;
+    --color-fondo: #F2F6FC;
+    --color-parrafos: #393B51;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.emapa-navbar {
+    background: var(--color-principal);
+    padding-inline: 85px;
+}
+
+.emapa-navbar .nav-link {
+    font-weight: 400;
+    transition: color 0.2s ease-in-out;
+}
+
+.emapa-navbar .nav-link:hover {
+    color: var(--color-texto-amarillo-hover);
+}
+
+.footer {
+    background: linear-gradient(to bottom, var(--color-principal), var(--color-secundario));
+    color: var(--color-texto);
+}
+
+/* Sidebar moderno */
+.offcanvas-body .btn {
+    text-align: left;
+}
+
+.offcanvas-body .accordion-button {
+    font-weight: 600;
+}
+
+.offcanvas-body a.nav-link:hover {
+    color: var(--color-principal);
+    font-weight: 500;
+}
+
+/* Enlaces del menú */
+.sidebar-nav-modern .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    color: var(--color-secundario);
+    background-color: transparent;
+}
+
+.sidebar-nav-modern .nav-link:hover {
+    background-color: #eaf1f9;
+    color: var(--color-texto-amarillo-hover);
+    text-decoration: none;
+}
+
+/* Iconos */
+.sidebar-nav-modern i {
+    font-size: 1.3rem;
+}
+
+.container-fluid .navbar-brand,
+.hamburguesa {
+    color: var(--color-principal);
+}
+
+.card {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease-in-out;
+}
+
+
+.hover-shadow:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
+    transform: translateY(-4px);
+}
+
+
+.transition {
+    transition: all 0.3s ease-in-out;
+}
+
+.btn-emapa-outline {
+    display: inline-block;
+    padding: 10px 10px;
+    border: 1px solid var(--color-principal);
+    color: var(--color-principal);
+    background-color: transparent;
+    font-weight: 500;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+    text-decoration: none;
+}
+
+.btn-emapa-outline:hover {
+    color: var(--color-texto);
+    border-color: var(--color-principal);
+    background-color: var(--color-principal); 
+}
+
+
+.text-emapa {
+    color: var(--color-principal) !important;
+}
+
+.icon-emapa {
+    color: var(--color-principal);
+}
+
