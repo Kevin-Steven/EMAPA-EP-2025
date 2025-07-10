@@ -23,13 +23,13 @@ function renderSidebarEmapa()
     <!-- Sidebar Offcanvas -->
     <div class="offcanvas offcanvas-start" tabindex="-1" id="sidebarMenu" aria-labelledby="sidebarMenuLabel">
         <div class="offcanvas-header" style="background: var(--color-principal);">
-             <img src="<?= $base_url ?>/image/logo-emapa.png" alt="Logo EMAPA-EP" height="50">
+            <img src="<?= $base_url ?>/image/logo-emapa.png" alt="Logo EMAPA-EP" height="50">
             <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Cerrar"></button>
         </div>
 
         <div class="offcanvas-body sidebar-nav-modern d-flex flex-column gap-3 px-3">
             <!-- Inicio -->
-            <a class="nav-link d-flex align-items-center gap-2" href="/">
+            <a class="nav-link d-flex align-items-center gap-2" href="<?php echo $base_url; ?>/">
                 <i class='bx bx-home-alt'></i> Inicio
             </a>
 
@@ -61,6 +61,11 @@ function renderSidebarEmapa()
                                     </a>
                                 </li>
                                 <li>
+                                    <a class="nav-link d-flex align-items-center gap-2" href="<?php echo $base_url; ?>/app/formularios/certificado-no-adeudar.php">
+                                        <i class='bx bx-right-arrow-alt'></i> Certificado De No Adeudar
+                                    </a>
+                                </li>
+                                <li>
                                     <a class="nav-link d-flex align-items-center gap-2" href="#">
                                         <i class='bx bx-right-arrow-alt'></i> Acceso a la Información Pública
                                     </a>
@@ -75,11 +80,7 @@ function renderSidebarEmapa()
                                         <i class='bx bx-right-arrow-alt'></i> Cambio de Razón Social
                                     </a>
                                 </li>
-                                <li>
-                                    <a class="nav-link d-flex align-items-center gap-2" href="#">
-                                        <i class='bx bx-right-arrow-alt'></i> Certificado De No Adeudar
-                                    </a>
-                                </li>
+
                             </ul>
                         </div>
                     </div>
@@ -89,7 +90,7 @@ function renderSidebarEmapa()
             <hr>
 
             <!-- Enlace Externo -->
-            <a class="nav-link d-flex align-items-center gap-2" href="https://emapa.institutobolivariano.online/" target="_blank">
+            <a class="nav-link d-flex align-items-center gap-2" href="https://emapa.institutobolivariano.online/">
                 <i class='bx bx-link-external'></i> Ir al Portal EMAPA
             </a>
         </div>
