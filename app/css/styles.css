@@ -109,7 +109,7 @@ body {
 .btn-emapa-outline:hover {
     color: var(--color-texto);
     border-color: var(--color-principal);
-    background-color: var(--color-principal); 
+    background-color: var(--color-principal);
 }
 
 
@@ -121,3 +121,27 @@ body {
     color: var(--color-principal);
 }
 
+@media (max-width: 576px) {
+
+    .container {
+        margin-top: 1.5rem;
+        padding-inline: 20px;
+    }
+
+    .emapa-navbar {
+        padding-inline: 0px;
+    }
+
+    .sidebar-nav-modern .nav-link {
+        font-size: 16px;
+    }
+
+    .breadcrumb .breadcrumb-item {
+        font-size: 14px;
+    }
+
+    .footer {
+        font-size: 13px;
+        padding-top: 0px !important;
+    }
+}
